@@ -1,0 +1,9 @@
+sudo mysql -e "CREATE USER 'neil'@'localhost' IDENTIFIED BY '<neil123>'"
+
+
+sudo mysql -e "CREATE DATABASE neilenterprise default charset utf8;"
+
+sudo mysql -e "GRANT ALL on neilenterprise.* to neil@localhost;"
+
+mysql -u <username> -p -e 'status'
+Enter password: *********
